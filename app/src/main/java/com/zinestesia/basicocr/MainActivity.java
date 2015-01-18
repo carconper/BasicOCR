@@ -51,6 +51,7 @@ public class MainActivity extends ActionBarActivity {
 
         _path = Environment.getExternalStorageDirectory() + "/text_sample_image.jpg";
         _field.setText(_path);
+     // some changes for testing GT commit and pull
 
     }
 
