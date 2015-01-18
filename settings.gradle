@@ -1,0 +1,3 @@
+include ':app'
+// Added following procedure in https://coderwall.com/p/eurvaq/tesseract-with-andoird-and-gradle
+include ':libraries:tess-two'

@@ -1,0 +1,31 @@
+// Added from https://github.com/erangaeb/dev-notes/blob/master/tesseract/build.gradle
+// after following procedure in https://coderwall.com/p/eurvaq/tesseract-with-andoird-and-gradle
+
+buildscript {
+    repositories {
+            mavenCentral()
+    }
+    dependencies {
+            classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+
+apply plugin: 'android-library'
+
+android {
+    compileSdkVersion 19
+    buildToolsVersion "19.1.0"
+
+    defaultConfig {
+           minSdkVersion 8
+           targetSdkVersion 19
+    }
+
+    sourceSets.main {
+           manifest.srcFile 'AndroidManifest.xml'
+           java.srcDirs = ['src']
+           resources.srcDirs = ['src']
+           res.srcDirs = ['res']
+           jniLibs.srcDirs = ['libs']
+    }
+}
